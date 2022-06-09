@@ -17,10 +17,9 @@ module.exports = {
 
                 .addField('`📚-Horario`', '`Revisa el Horario General de Cada Pais del Servidor.`')
                 .addField('`📚-Info`', '`Revisa la Informacion del Servidor. *Aun en Desarrollo*`')
-                .addField('`📚-Ping`', '`Revisa el Ping del Servidor. *Aun en Desarrollo*`')
-                .addField('`📚-Invite`', '`Invita a un Amigo a este Servidor. *Aun en Desarrollo*`')
-
-            message.channel.send({embeds: [help]});
+                .addField('`📚-Ping`', '`Revisa el Ping del Servidor. *Aun en*`')
+                
+                message.channel.send({embeds: help})
                 
     }
 }
