@@ -30,9 +30,9 @@ module.exports = {
         .addField("ID:", member.user.id, true)
         .addField("Usuario:", member.user.username, true)
         .addField("Tag:", member.user.discriminator, true)
-        .addField("Creacion:", moment(member.user.createdAt).format('LL'), true)
+        .addField("Cuenta Creada:", moment(member.user.createdAt).format('LL'), true)
         .addField(`Roles:(${roles.length})`, `${displayRoles}`)
-        .addField("Cuenta Creada en:", moment(member.joinedAt).format('LL'), true)
+        .addField("Se Unio el:", moment(member.joinedAt).format('LL'), true)
         .addField("Pedido por:", `<@${member.user.id}>`, true)
 
         message.reply({embeds: [info]})
